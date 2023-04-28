@@ -11,6 +11,11 @@ import UIKit
 struct Country: Codable {
     let name: String
     let phoneCode: String
+    let imageName: String // add image name property
+    
+    var image: UIImage? { // computed property to load image from asset catalog
+        return UIImage(named: imageName)
+    }
 }
 
 class ViewController: UIViewController {
@@ -27,6 +32,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         countries = getData()
+        
+        //Register
+        
+        myTable.register(UINib(nibName: "CountryCell", bundle: nil), forCellReuseIdentifier: "CountryCell")
         
         //"A", "B"......
         sectionTitle = Array(Set(countries.compactMap{ String($0.name.prefix(1))})).sorted()
@@ -55,14 +64,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = myTable.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
+        guard let cell = myTable.dequeueReusableCell(withIdentifier: "CountryCell") as? CountryCell else { return UITableViewCell() }
         
         let sectionLetter = sectionTitle[indexPath.section]
         let country = countryDict[sectionLetter]?[indexPath.row]
-        
-        cell.textLabel?.text = country?.name ?? ""
-        cell.detailTextLabel?.text = country?.phoneCode
-        
+        cell.country = country
         return cell
     }
     
@@ -73,6 +79,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     //Right side titlelist
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return sectionTitle
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }
 

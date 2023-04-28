@@ -14,6 +14,8 @@
 		88FDF71F29FC027800A5825E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FDF71E29FC027800A5825E /* Assets.xcassets */; };
 		88FDF72229FC027800A5825E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FDF72029FC027800A5825E /* LaunchScreen.storyboard */; };
 		88FDF72C29FC4DFE00A5825E /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 88FDF72B29FC4DFE00A5825E /* countries.json */; };
+		88FDF72F29FC520500A5825E /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDF72D29FC520500A5825E /* CountryCell.swift */; };
+		88FDF73029FC520500A5825E /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FDF72E29FC520500A5825E /* CountryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		88FDF72129FC027800A5825E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88FDF72329FC027800A5825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88FDF72B29FC4DFE00A5825E /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		88FDF72D29FC520500A5825E /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		88FDF72E29FC520500A5825E /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				88FDF71529FC027400A5825E /* AppDelegate.swift */,
 				88FDF71729FC027400A5825E /* SceneDelegate.swift */,
 				88FDF71929FC027400A5825E /* ViewController.swift */,
+				88FDF72B29FC4DFE00A5825E /* countries.json */,
 				88FDF71B29FC027400A5825E /* Main.storyboard */,
 				88FDF71E29FC027800A5825E /* Assets.xcassets */,
 				88FDF72029FC027800A5825E /* LaunchScreen.storyboard */,
 				88FDF72329FC027800A5825E /* Info.plist */,
-				88FDF72B29FC4DFE00A5825E /* countries.json */,
+				88FDF72D29FC520500A5825E /* CountryCell.swift */,
+				88FDF72E29FC520500A5825E /* CountryCell.xib */,
 			);
 			path = SectionIndexing;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FDF73029FC520500A5825E /* CountryCell.xib in Resources */,
 				88FDF72229FC027800A5825E /* LaunchScreen.storyboard in Resources */,
 				88FDF71F29FC027800A5825E /* Assets.xcassets in Resources */,
 				88FDF72C29FC4DFE00A5825E /* countries.json in Resources */,
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FDF72F29FC520500A5825E /* CountryCell.swift in Sources */,
 				88FDF71A29FC027400A5825E /* ViewController.swift in Sources */,
 				88FDF71629FC027400A5825E /* AppDelegate.swift in Sources */,
 				88FDF71829FC027400A5825E /* SceneDelegate.swift in Sources */,
