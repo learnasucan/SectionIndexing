@@ -1,0 +1,43 @@
+
+[
+    {
+        "name": "USA",
+        "phoneCode": "+1"
+    },
+    {
+        "name": "Afghanistan",
+        "phoneCode": "+93"
+    },
+    {
+        "name": "Albania",
+        "phoneCode": "+355"
+    },
+    {
+        "name": "Algeria",
+        "phoneCode": "+213"
+    },
+    {
+        "name": "Andorra",
+        "phoneCode": "+376"
+    },
+    {
+        "name": "Angola",
+        "phoneCode": "+244"
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "phoneCode": "+12"
+    },
+    {
+        "name": "Argentina",
+        "phoneCode": "+54"
+    },
+    {
+        "name": "Armenia",
+        "phoneCode": "+374"
+    },
+    {
+        "name": "Australia",
+        "phoneCode": "+61"
+    }
+]
